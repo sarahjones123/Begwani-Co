@@ -1,13 +1,473 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-    <!-- This is a replit script which adds a banner on the top of the page when opened in development mode outside the replit environment -->
-    <script type="text/javascript" src="https://replit.com/public/js/replit-dev-banner.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Begwani & Co., Chartered Accountants</title>
+    <meta name="description" content="Begwani & Co., Chartered Accountants - Your trusted partner in financial reporting, Ind AS transition, and virtual CFO services since 2021.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <i class="fas fa-calculator"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>Begwani & Co.</h1>
+                    <p>Chartered Accountants</p>
+                </div>
+            </div>
+            
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#engagements" class="nav-link">Engagements</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-slide active">
+            <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&h=1080')"></div>
+            <div class="hero-content">
+                <h2>Where Precision meets Possibility</h2>
+                <p>Every decimal matters. Every insight inspires.</p>
+                <button class="cta-button" onclick="scrollToSection('contact')">Know More</button>
+            </div>
+        </div>
+        
+        <div class="hero-slide">
+            <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&h=1080')"></div>
+            <div class="hero-content">
+                <h2>Driven by Insight. Powered by Innovation.</h2>
+                <p>Unlocking value with every number. We turn challenges into growth stories.</p>
+                <button class="cta-button" onclick="scrollToSection('contact')">Know More</button>
+            </div>
+        </div>
+        
+        <div class="hero-slide">
+            <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&h=1080')"></div>
+            <div class="hero-content">
+                <h2>Building Clarity, Driving Excellence</h2>
+                <p>From simplifying financial complexities to providing strategic advisory, we ensure Transparency, Compliance and Direction.</p>
+                <button class="cta-button" onclick="scrollToSection('contact')">Know More</button>
+            </div>
+        </div>
+        
+        <div class="hero-dots">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="4">0</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="25">0</div>
+                    <div class="stat-label">Successful Implementations</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="100">0</div>
+                    <div class="stat-label">Client Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Comprehensive financial reporting and advisory services tailored to your business needs</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400" alt="IFRS / Ind AS Transition">
+                    </div>
+                    <div class="service-content">
+                        <h3>IFRS / Ind AS Transition</h3>
+                        <p>Seamless transition to international financial reporting standards with expert guidance and automation.</p>
+                        <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400" alt="Financial Reporting & Advisory">
+                    </div>
+                    <div class="service-content">
+                        <h3>Financial Reporting & Advisory</h3>
+                        <p>Comprehensive financial reporting solutions with strategic advisory for better decision-making.</p>
+                        <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400" alt="Financial Reporting Automation">
+                    </div>
+                    <div class="service-content">
+                        <h3>Financial Reporting Automation</h3>
+                        <p>Streamline your financial processes with cutting-edge automation technologies.</p>
+                        <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400" alt="Virtual CFO Services">
+                    </div>
+                    <div class="service-content">
+                        <h3>Virtual CFO (vCFO) Services</h3>
+                        <p>Access expert CFO-level financial leadership and strategic guidance on-demand.</p>
+                        <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400" alt="Assurance and Audit Support">
+                    </div>
+                    <div class="service-content">
+                        <h3>Assurance and Audit Support</h3>
+                        <p>Comprehensive audit and assurance services to ensure compliance and transparency.</p>
+                        <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400" alt="IPO Readiness">
+                    </div>
+                    <div class="service-content">
+                        <h3>IPO Readiness & Restatement</h3>
+                        <p>Prepare your company for public listing with expert guidance and financial restatement services.</p>
+                        <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Us</h2>
+                <p>Begwani & Co., Chartered Accountants, founded in 2021, is a Kolkata-based CA firm providing end-to-end financial reporting, accounting advisory, Ind AS transition, and virtual CFO services.</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="vision-mission">
+                        <h3>Our Vision</h3>
+                        <p>To be a one-stop, trusted solution provider in the realm of financial reporting and accounting transformation.</p>
+                        
+                        <h3>Our Mission</h3>
+                        <p>To empower corporates with specialized financial expertise, enabling seamless compliance and strategic decision-making.</p>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" alt="Modern office">
+                </div>
+            </div>
+            
+            <div class="team-profiles">
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=300" alt="Shreyans Begwani">
+                    </div>
+                    <div class="member-info">
+                        <h3>Shreyans Begwani</h3>
+                        <p class="credentials">FCA, B.Com (H), Cert. IFRS (ACCA), FAFD, AICA</p>
+                        <p class="role">Founder</p>
+                        <p class="bio">Fellow Chartered Accountant with over a decade of experience in Ind AS implementation and financial reporting automation. Having spearheaded Ind AS transitions for over 25 companies across sectors.</p>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=300" alt="Indrajit Dhar">
+                    </div>
+                    <div class="member-info">
+                        <h3>Mr. Indrajit Dhar</h3>
+                        <p class="credentials">ACA, ACS, Ph. D</p>
+                        <p class="role">Senior Advisor – Strategic Finance & Governance</p>
+                        <p class="bio">Highly experienced Chartered Accountant and Company Secretary with more than 35 years of practical experience in corporate finance, accounts and taxation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Us?</h2>
+                <p>Our proven expertise and commitment to excellence make us the ideal partner for your financial needs</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Proven Expertise</h3>
+                    <p>Over 25 successful Ind AS implementations across various sectors</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Automation Focus</h3>
+                    <p>Driven by automation for speed, accuracy, and efficiency</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Partner-led Execution</h3>
+                    <p>Active involvement, not just oversight, in every engagement</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>IPO Readiness</h3>
+                    <p>Tailored support for IPO preparation and audit readiness</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>Compliance & Strategy</h3>
+                    <p>Seamless blend of regulatory compliance and strategic insight</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Diverse Experience</h3>
+                    <p>Strong experience across listed, unlisted, and group companies</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Engagements Section -->
+    <section id="engagements" class="engagements">
+        <div class="container">
+            <div class="section-header">
+                <h2>Key Engagements</h2>
+                <p>In 3 Years, We've Delivered High-Impact Engagements Across Leading Listed, Unlisted, and IPO-Bound Companies</p>
+            </div>
+            
+            <div class="engagements-grid">
+                <div class="engagement-card">
+                    <div class="engagement-icon primary">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>End-to-End Financial Reporting</h3>
+                    <ul>
+                        <li>Kesoram Industries Limited and Group Companies</li>
+                        <li>Mehai Technologies Limited and its Subsidiaries</li>
+                        <li>Dynamic Services & Security Limited</li>
+                        <li>Destiny Logistics & Infra Limited</li>
+                    </ul>
+                </div>
+                
+                <div class="engagement-card">
+                    <div class="engagement-icon secondary">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Financial Reporting Automation</h3>
+                    <ul>
+                        <li>Albert David Limited (Kothari Group)</li>
+                        <li>Birla Corporation Limited (M.P. Birla Group)</li>
+                    </ul>
+                </div>
+                
+                <div class="engagement-card">
+                    <div class="engagement-icon accent">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Ind AS Transition & IPO</h3>
+                    <ul>
+                        <li>ArisInfra Group (Listed on June 25, 2025)</li>
+                        <li>Crizac Limited (IPO to open on July 2, 2025)</li>
+                        <li>Regaal Resources Limited</li>
+                        <li>Maheshwari Mining Private Limited</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>Ready to transform your financial reporting? Get in touch with our expert team today.</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon primary">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Office Address</h3>
+                            <p>Poddar Court, 18 Rabindra Sarani,<br>Gate 2, 5th Floor, Room 528,<br>Kolkata - 700001</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon secondary">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Email</h3>
+                            <p>s.begwani1@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon accent">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Phone</h3>
+                            <p>+91 90075 71997</p>
+                        </div>
+                    </div>
+                    
+                    <div class="quote-card">
+                        <blockquote>
+                            "Coming together is a beginning, staying together is progress, and working together is success."
+                            <footer>- Henry Ford</footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h3>Begwani & Co.</h3>
+                            <p>Chartered Accountants</p>
+                        </div>
+                    </div>
+                    <p>A trusted partner in financial reporting and advisory services since 2021.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>IFRS / Ind AS Transition</li>
+                        <li>Financial Reporting</li>
+                        <li>Virtual CFO Services</li>
+                        <li>Audit Support</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Our Team</li>
+                        <li>Engagements</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Begwani & Co., Chartered Accountants. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
