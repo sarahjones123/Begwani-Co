@@ -114,7 +114,9 @@ function fadeInElements() {
 // Contact form handling
 document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.getElementById('contactForm');
+    const detailedContactForm = document.getElementById('detailedContactForm');
     
+    // Handle main contact form (index.html)
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
@@ -145,7 +147,51 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Reset button
                 submitBtn.textContent = originalText;
                 submitBtn.disabled = false;
+                false;
             }, 1000);
+        });
+    }
+    
+    // Handle detailed contact form (contact.html)
+    if (detailedContactForm) {
+        detailedContactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(detailedContactForm);
+            const data = {
+                fullName: formData.get('fullName'),
+                emailAddress: formData.get('emailAddress'),
+                phoneNumber: formData.get('phoneNumber'),
+                serviceNeeded: formData.get('serviceNeeded'),
+                message: formData.get('message'),
+                consent: formData.get('consent')
+            };
+            
+            // Validate consent checkbox
+            if (!data.consent) {
+                showNotification('Please consent to being contacted before submitting the form.', 'error');
+                return;
+            }
+            
+            // Show loading state
+            const submitBtn = detailedContactForm.querySelector('.submit-btn-detailed');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            submitBtn.disabled = true;
+            
+            // Simulate form submission (replace with actual API call)
+            setTimeout(() => {
+                // Reset form
+                detailedContactForm.reset();
+                
+                // Show success message
+                showNotification('Thank you for your detailed inquiry! Our team will contact you within 24 hours.', 'success');
+                
+                // Reset button
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            }, 1500);
         });
     }
 });

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Begwani & Co., Chartered Accountants</title>
+    <meta name="description" content="Get in touch with Begwani & Co., Chartered Accountants. Schedule a free consultation for expert financial reporting, Ind AS transition, and virtual CFO services.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <i class="fas fa-calculator"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>Begwani & Co.</h1>
+                    <p>Chartered Accountants</p>
+                </div>
+            </div>
+            
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html#services" class="nav-link">Services</a>
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#engagements" class="nav-link">Engagements</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="contact-hero-bg">
+            <img src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=600" alt="Contact us background">
+        </div>
+        <div class="container">
+            <div class="contact-hero-content">
+                <h1>Get In Touch</h1>
+                <p>Ready to take your business to the next level? We're here to help you navigate the complexities of financial management and taxation. Contact us today for a free consultation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Information -->
+                <div class="contact-info-cards">
+                    <div class="info-card">
+                        <div class="info-card-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-card-content">
+                            <h3>Phone Numbers</h3>
+                            <p>+91 90075 71997</p>
+                            <p>+91 33 2236 8756</p>
+                            <small>Available Monday to Friday, 9 AM - 6 PM</small>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-card-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-card-content">
+                            <h3>Email Address</h3>
+                            <p>s.begwani1@gmail.com</p>
+                            <p>contact@begwaniandco.com</p>
+                            <small>We respond within 24 hours</small>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-card-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-card-content">
+                            <h3>Office Location</h3>
+                            <p>Poddar Court, 18 Rabindra Sarani,</p>
+                            <p>Gate 2, 5th Floor, Room 528,</p>
+                            <p>Kolkata - 700001</p>
+                            <small>Public transport accessible</small>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-card-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-card-content">
+                            <h3>Business Hours</h3>
+                            <div class="business-hours">
+                                <div class="hours-row">
+                                    <span>Monday - Friday</span>
+                                    <span>9:00 AM - 6:00 PM</span>
+                                </div>
+                                <div class="hours-row">
+                                    <span>Saturday</span>
+                                    <span>10:00 AM - 4:00 PM</span>
+                                </div>
+                                <div class="hours-row">
+                                    <span>Sunday</span>
+                                    <span>Closed</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <div class="form-header">
+                        <h2>Send Us a Message</h2>
+                        <p>Fill out the form below and we'll get back to you within 24 hours</p>
+                    </div>
+
+                    <form class="contact-form-detailed" id="detailedContactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fullName">Full Name *</label>
+                                <input type="text" id="fullName" name="fullName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="emailAddress">Email Address *</label>
+                                <input type="email" id="emailAddress" name="emailAddress" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phoneNumber">Phone Number</label>
+                                <input type="tel" id="phoneNumber" name="phoneNumber">
+                            </div>
+                            <div class="form-group">
+                                <label for="serviceNeeded">Service Needed</label>
+                                <select id="serviceNeeded" name="serviceNeeded">
+                                    <option value="">Select a service</option>
+                                    <option value="ifrs-transition">IFRS / Ind AS Transition</option>
+                                    <option value="financial-reporting">Financial Reporting & Advisory</option>
+                                    <option value="automation">Financial Reporting Automation</option>
+                                    <option value="vcfo">Virtual CFO Services</option>
+                                    <option value="audit">Audit & Assurance</option>
+                                    <option value="ipo">IPO Readiness</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Please describe your requirements or any specific questions you have..."></textarea>
+                        </div>
+
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="consent" name="consent" required>
+                            <label for="consent">I consent to being contacted by Begwani & Co. regarding my inquiry.</label>
+                        </div>
+
+                        <button type="submit" class="submit-btn-detailed">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+
+                    <div class="form-note">
+                        <p><i class="fas fa-info-circle"></i> We typically respond to all inquiries within 24 hours during business days</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="map-header">
+                <h2>Find Our Office</h2>
+                <p>Visit us at our Kolkata office for in-person consultations</p>
+            </div>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <div class="map-content">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Begwani & Co.</h3>
+                        <p>Poddar Court, 18 Rabindra Sarani,<br>Gate 2, 5th Floor, Room 528,<br>Kolkata - 700001</p>
+                        <a href="https://maps.google.com/?q=Poddar+Court+18+Rabindra+Sarani+Kolkata" target="_blank" class="map-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Open in Google Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="contact-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Financial Reporting?</h2>
+                <p>Join 50+ companies who trust us with their financial excellence</p>
+                <div class="cta-buttons">
+                    <a href="tel:+919007571997" class="btn-primary">
+                        <i class="fas fa-phone"></i>
+                        Call Now
+                    </a>
+                    <a href="mailto:s.begwani1@gmail.com" class="btn-secondary">
+                        <i class="fas fa-envelope"></i>
+                        Email Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h3>Begwani & Co.</h3>
+                            <p>Chartered Accountants</p>
+                        </div>
+                    </div>
+                    <p>A trusted partner in financial reporting and advisory services since 2021.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>IFRS / Ind AS Transition</li>
+                        <li>Financial Reporting</li>
+                        <li>Virtual CFO Services</li>
+                        <li>Audit Support</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#about">Our Team</a></li>
+                        <li><a href="index.html#engagements">Engagements</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Begwani & Co., Chartered Accountants. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
