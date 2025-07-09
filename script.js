@@ -263,7 +263,7 @@ document.addEventListener('DOMContentLoaded', function() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const img = entry.target;
-                img.style.opacity = '0';
+                // img.style.opacity = '0';
                 img.style.transition = 'opacity 0.3s ease';
                 
                 img.onload = function() {
